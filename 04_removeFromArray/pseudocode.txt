@@ -1,0 +1,16 @@
+Implement a function that takes an array and some other arguments then removes the other arguments from that array:
+
+removeFromArray([1, 2, 3, 4], 3); // should remove 3 and return [1,2,4]
+
+FUNCTION removeFromArray (...input)
+    INIT toRemove;
+    INIT array;
+    FOR INIT i; i < input.length; i++
+        IF i==0 THEN array= input[i]
+        ELSE  toRemove=input[i].push()
+
+    FOR INIT i; i<array.length; i++;
+        FOR INIT j; j<toRemove.length;j++
+            IF array[i]===toRemove[j]
+            THEN array.splice(i,1)
+    RETURN Array;
