@@ -3,6 +3,7 @@ const removeFromArray = function(...input){
     let array=[];
     for (let i=0;i<input.length;i++){
         (i==0)?array=input[i]:toRemove.push(input[i]);
+    }
 
     for (let i=0;i<array.length;i++){
         for (let j=0;j<toRemove.length;j++){
