@@ -16,7 +16,7 @@ const removeFromArray = function(...input){
     for (let i=0;i<array.length;i++){
         for (let j=0;j<toRemove.length;j++){
             if (array[i]===toRemove[j]){
-                array.splice(i,1);
+                array.splice(i--,1);
             }
         }
     }
