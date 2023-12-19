@@ -6,20 +6,29 @@ const subtract = function(a,b) {
 	return a-b;
 };
 
+// const sum = function(array) {
+// 	let sum=0;
+//   for (let i=0; i<array.length; i++){
+//     sum+=array[i];
+//   }
+//   return sum;
+// };
+
 const sum = function(array) {
-	let sum=0;
-  for (let i=0; i<array.length; i++){
-    sum+=array[i];
-  }
-  return sum;
+ return array.reduce((result,current) => result+current, 0);
 };
 
+
+// const multiply = function(factors) {
+//   let product=1;
+//   for (let i=0; i<factors.length; i++){
+//     product*=factors[i];
+//   }
+//   return product;
+// };
+
 const multiply = function(factors) {
-  let product=1;
-  for (let i=0; i<factors.length; i++){
-    product*=factors[i];
-  }
-  return product;
+  return factors.reduce((result,current) => result*current);
 };
 
 const power = function(number, power) {
