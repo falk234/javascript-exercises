@@ -1,0 +1,6 @@
+for each person (object)
+substract death from birth to calculate age
+calculate age with Date function to consider still living people
+initialize oldest_person object
+compare for each object age with age of oldest person
+set oldest person object to current Element, if age is greater
