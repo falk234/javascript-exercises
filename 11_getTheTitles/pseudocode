@@ -1,0 +1,2 @@
+for each book (element) of array 
+copy element attribute "title" to new array
